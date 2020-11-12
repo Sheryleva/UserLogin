@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //Changes by Sheryl
         if string.rangeOfCharacter(from: NSCharacterSet.decimalDigits.inverted) == nil{
                 let len = (textField.text?.count)! + string.count
-                if len <= 5 {
+                if len <= 6 {
                     return true
                 }
             }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var username: UITextField!
     
@@ -30,6 +30,17 @@ class ViewController: UIViewController {
 
     @IBAction func buttonClicked(_ sender: UIButton) {
         
+        
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if string.rangeOfCharacter(from: NSCharacterSet.decimalDigits.inverted) == nil{
+                let len = (textField.text?.count)! + string.count
+                if len <= 5 {
+                    return true
+                }
+            }
+            return false
     }
     
 

@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var username: UITextField!
-    
     @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
@@ -22,18 +21,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func username_entered(_ sender: UITextField) {
         
     }
-    
     @IBAction func password_entered(_ sender: UITextField) {
         
     }
-    
-    
-    
+
     @IBAction func buttonClicked(_ sender: UIButton) {
         let sBoard = UIStoryboard(name: GloballyApplied.storyBoardName, bundle: nil)
         let destination = sBoard.instantiateViewController(withIdentifier: GloballyApplied.storyBoardID)
-        
-
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

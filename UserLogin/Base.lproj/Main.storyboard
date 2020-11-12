@@ -17,12 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-zc-TcY" customClass="RTextfield" customModule="UserLogin" customModuleProvider="target">
-                                <rect key="frame" x="20" y="140" width="374" height="34"/>
+                                <rect key="frame" x="20" y="218" width="374" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cRadio">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borColo">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,12 +34,13 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2H-3Y-fPx" customClass="RTextfield" customModule="UserLogin" customModuleProvider="target">
-                                <rect key="frame" x="20" y="218" width="374" height="34"/>
+                                <rect key="frame" x="20" y="274" width="374" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cRadio">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borColo">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,9 +50,12 @@
                                     <action selector="password_entered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xyJ-gK-3uO"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b2-ra-qn6">
-                                <rect key="frame" x="184" y="292" width="46" height="39"/>
-                                <state key="normal" title="Log In"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b2-ra-qn6">
+                                <rect key="frame" x="179" y="328" width="56" height="32"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwc-fN-vS2"/>
                                 </connections>
@@ -60,16 +65,15 @@
                         <color key="backgroundColor" red="1" green="0.78701206570000004" blue="0.64617982799999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="05q-YZ-bP7"/>
-                            <constraint firstItem="4b2-ra-qn6" firstAttribute="top" secondItem="t2H-3Y-fPx" secondAttribute="bottom" constant="40" id="B1m-fE-Bbc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4b2-ra-qn6" secondAttribute="trailing" constant="184" id="Cfr-nG-VLH"/>
-                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="top" secondItem="JPh-zc-TcY" secondAttribute="bottom" constant="44" id="GVr-De-Ppc"/>
-                            <constraint firstItem="4b2-ra-qn6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="L8C-dE-rTc"/>
+                            <constraint firstItem="4b2-ra-qn6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANP-Pl-vIU"/>
+                            <constraint firstItem="4b2-ra-qn6" firstAttribute="top" secondItem="t2H-3Y-fPx" secondAttribute="bottom" constant="20" id="B1m-fE-Bbc"/>
+                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="top" secondItem="JPh-zc-TcY" secondAttribute="bottom" constant="22" id="GVr-De-Ppc"/>
                             <constraint firstItem="t2H-3Y-fPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mkd-FS-xWA"/>
                             <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pqw-E7-auD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="Ybu-Yg-3UX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t2H-3Y-fPx" secondAttribute="trailing" constant="20" id="gGP-aS-j6f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="gNJ-SH-CwI"/>
-                            <constraint firstItem="JPh-zc-TcY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="r1W-3R-bFS"/>
+                            <constraint firstItem="JPh-zc-TcY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="r1W-3R-bFS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TBL-F2-tzD"/>

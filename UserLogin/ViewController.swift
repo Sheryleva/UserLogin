@@ -37,6 +37,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        //Changes by Sheryl
         if string.rangeOfCharacter(from: NSCharacterSet.decimalDigits.inverted) == nil{
                 let len = (textField.text?.count)! + string.count
                 if len <= 5 {

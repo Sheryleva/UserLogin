@@ -15,7 +15,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        username.placeholder = "User Name"
+        password.placeholder = "Pass Word"
     }
     
     @IBAction func username_entered(_ sender: UITextField) {
@@ -27,10 +28,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-
+    
     @IBAction func buttonClicked(_ sender: UIButton) {
+        let sBoard = UIStoryboard(name: GloballyApplied.storyBoardName, bundle: nil)
+        let destination = sBoard.instantiateViewController(withIdentifier: GloballyApplied.storyBoardID)
         
-        
+
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -43,6 +46,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return false
     }
     
+
 
 }
 

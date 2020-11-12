@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        username.placeholder = "User Name"
+        password.placeholder = "Pass Word"
     }
     
     @IBAction func username_entered(_ sender: UITextField) {
@@ -27,11 +28,19 @@ class ViewController: UIViewController {
     }
     
     
-
-    @IBAction func buttonClicked(_ sender: UIButton) {
-        
-    }
     
-
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        let sBoard = UIStoryboard(name: GloballyApplied.storyBoardName, bundle: nil)
+        let destination = sBoard.instantiateViewController(withIdentifier: GloballyApplied.storyBoardID)
+        
+        guard let usernameString = username.text else { return }
+        guard let passwordString = password.text else { return }
+        
+        if passwordString.count >= 6 && usernameString.isValidEmailOrNaw {
+            navigationController?.pushViewController(destination, animated: true)
+        } else {
+            print("password or email not valid")
+        }
+    } 
 }
 

@@ -17,12 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-zc-TcY" customClass="RTextfield" customModule="UserLogin" customModuleProvider="target">
+<<<<<<< HEAD
                                 <rect key="frame" x="20" y="337" width="374" height="34"/>
+=======
+                                <rect key="frame" x="20" y="218" width="374" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+>>>>>>> a507518207db223244eff87a10a232a6a356dd64
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cRadio">
                                         <real key="value" value="10"/>
+                                        <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borColo">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,6 +65,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.78701206570000004" blue="0.64617982799999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="BJY-Lq-QDQ"/>
                             <constraint firstItem="t2H-3Y-fPx" firstAttribute="top" secondItem="JPh-zc-TcY" secondAttribute="bottom" constant="40" id="BOk-BT-nWG"/>
                             <constraint firstItem="4b2-ra-qn6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="DIe-mj-bfn"/>
@@ -69,6 +76,18 @@
                             <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iNb-qc-yE8"/>
                             <constraint firstItem="JPh-zc-TcY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="j1F-mx-lKB"/>
                             <constraint firstItem="t2H-3Y-fPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uYn-Y5-xNf"/>
+=======
+                            <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="05q-YZ-bP7"/>
+                            <constraint firstItem="4b2-ra-qn6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANP-Pl-vIU"/>
+                            <constraint firstItem="4b2-ra-qn6" firstAttribute="top" secondItem="t2H-3Y-fPx" secondAttribute="bottom" constant="20" id="B1m-fE-Bbc"/>
+                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="top" secondItem="JPh-zc-TcY" secondAttribute="bottom" constant="22" id="GVr-De-Ppc"/>
+                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mkd-FS-xWA"/>
+                            <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pqw-E7-auD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="Ybu-Yg-3UX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t2H-3Y-fPx" secondAttribute="trailing" constant="20" id="gGP-aS-j6f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="gNJ-SH-CwI"/>
+                            <constraint firstItem="JPh-zc-TcY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="r1W-3R-bFS"/>
+>>>>>>> a507518207db223244eff87a10a232a6a356dd64
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TBL-F2-tzD"/>

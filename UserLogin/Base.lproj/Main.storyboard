@@ -78,7 +78,13 @@
                             <constraint firstItem="t2H-3Y-fPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uYn-Y5-xNf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TBL-F2-tzD"/>
+                    <navigationItem key="navigationItem" id="TBL-F2-tzD">
+                        <barButtonItem key="leftBarButtonItem" title="Tap this" id="Znp-X1-DNg">
+                            <connections>
+                                <action selector="menuPoppingOut:" destination="BYZ-38-t0r" id="Wia-Qw-6cT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="password" destination="t2H-3Y-fPx" id="Ulf-df-b8i"/>
                         <outlet property="username" destination="JPh-zc-TcY" id="tdD-aK-YCb"/>

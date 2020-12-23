@@ -15,11 +15,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func menuPoppingOut(_ sender: UIBarButtonItem) {
         if let sideMenuNavigator = sideMenuNavigator {
             present(sideMenuNavigator, animated: true)
+            username.isHidden = !username.isHidden
+            password.isHidden = !password.isHidden
         } else {
-            print("sideMenuNavigator malfunctioning")
+            print(GloballyApplied.malfunctionaliy)
         }
     }
-        
+         
     
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -28,18 +30,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         username.placeholder = "User Name"
         password.placeholder = "Pass Word"
+        password.isHidden = true
         
-    //    settingUpSideMenuNavigator()
-        navigationItem.leftBarButtonItem?.title = "Menu"
+        settingUpSideMenuNavigator()
+        navigationItem.leftBarButtonItem?.title = "Click here"
+        navigationItem.leftBarButtonItem?.tintColor = .black
     }
     
-//    fileprivate func settingUpSideMenuNavigator() {
-//        sideMenuNavigator = SideMenuNavigationController(rootViewController: ViewController())
-//        sideMenuNavigator?.leftSide = true
-//        sideMenuNavigator?.setNavigationBarHidden(true, animated: false)
-//        SideMenuManager.default.leftMenuNavigationController = sideMenuNavigator
-//        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-//    }
+    fileprivate func settingUpSideMenuNavigator() {
+        sideMenuNavigator = SideMenuNavigationController(rootViewController: MeinyoTeburuController.init())
+        sideMenuNavigator?.leftSide = true
+        sideMenuNavigator?.setNavigationBarHidden(true, animated: false)
+        SideMenuManager.default.leftMenuNavigationController = sideMenuNavigator
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+    }
     
     
     @IBAction func username_entered(_ sender: UITextField) {
@@ -64,8 +68,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
             return false
     }
-    
-
-
 }
 

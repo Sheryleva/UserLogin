@@ -10,4 +10,6 @@ import Foundation
 struct GloballyApplied {
     static let storyBoardID = "ID"
     static let storyBoardName = "Main"
+    static let idOfMeinyoTeburuCell = "idOfMeinyoTeburuCell"
+    static let malfunctionaliy = "sideMenuNavigator malfunctioning"
 }

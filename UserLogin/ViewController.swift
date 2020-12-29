@@ -26,22 +26,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func buttonClicked(_ sender: UIButton) {
+        guard let passwordEntered = password.text else {return}
+        guard passwordEntered.count >= 8 else{
+            let alert = UIAlertController.init(title: "Error!", message: "Password should have atleast 8 characters.", preferredStyle: .alert)
+            self.present(alert, animated: true, completion: nil)
+            let ok = UIAlertAction.init(title: "Ok", style: .default) { (_) in
+                self.password.text = ""
+            }
+            alert.addAction(ok)
+            return
+        }
+        
         let sBoard = UIStoryboard(name: GloballyApplied.storyBoardName, bundle: nil)
         let destination = sBoard.instantiateViewController(withIdentifier: GloballyApplied.storyBoardID)
+        navigationController?.pushViewController(destination, animated: true)
+        
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        //Changes by Sheryl
-        if string.rangeOfCharacter(from: NSCharacterSet.decimalDigits.inverted) == nil{
-                let len = (textField.text?.count)! + string.count
-                if len <= 6 {
-                    return true
-                }
-            }
-            return false
-    }
-    
-
 
 }
 

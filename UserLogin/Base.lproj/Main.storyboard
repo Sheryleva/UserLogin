@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49M-Dx-W86">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49M-Dx-W86">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2H-3Y-fPx" customClass="RTextfield" customModule="UserLogin" customModuleProvider="target">
-                                <rect key="frame" x="20" y="703" width="374" height="34"/>
+                                <rect key="frame" x="20" y="274" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -33,14 +33,16 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b2-ra-qn6">
-                                <rect key="frame" x="186" y="767" width="42" height="30"/>
-                                <state key="normal" title="Log In"/>
+                                <rect key="frame" x="183.5" y="321" width="47" height="30"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="0.82960261800000001" green="0.94117647059999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwc-fN-vS2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-zc-TcY" customClass="RTextfield" customModule="UserLogin" customModuleProvider="target">
-                                <rect key="frame" x="20" y="632" width="374" height="34"/>
+                                <rect key="frame" x="20" y="223" width="374" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -58,19 +60,22 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="0.78701206570000004" blue="0.64617982799999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4b2-ra-qn6" secondAttribute="trailing" constant="186" id="GcR-oy-bNU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4b2-ra-qn6" secondAttribute="bottom" constant="65" id="K2a-CC-pxb"/>
-                            <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="O68-Tn-dcy"/>
-                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ORY-3g-Iq9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="Oda-21-3gn"/>
-                            <constraint firstItem="4b2-ra-qn6" firstAttribute="top" secondItem="t2H-3Y-fPx" secondAttribute="bottom" constant="30" id="UIg-u0-Ldl"/>
-                            <constraint firstItem="4b2-ra-qn6" firstAttribute="top" secondItem="t2H-3Y-fPx" secondAttribute="bottom" constant="30" id="Yv2-Dr-NPq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t2H-3Y-fPx" secondAttribute="trailing" constant="20" id="ZP1-Nf-F6u"/>
-                            <constraint firstItem="JPh-zc-TcY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="544" id="j2I-e0-I2w"/>
-                            <constraint firstItem="4b2-ra-qn6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="pWi-ci-K70"/>
-                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="top" secondItem="JPh-zc-TcY" secondAttribute="bottom" constant="37" id="uCF-tW-aUs"/>
+                            <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="05q-YZ-bP7"/>
+                            <constraint firstItem="4b2-ra-qn6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANP-Pl-vIU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="BJY-Lq-QDQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t2H-3Y-fPx" secondAttribute="trailing" constant="20" id="Fhn-Cv-Xok"/>
+                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mkd-FS-xWA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4b2-ra-qn6" secondAttribute="bottom" constant="511" id="OWC-h8-MgG"/>
+                            <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pqw-E7-auD"/>
+                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="top" secondItem="JPh-zc-TcY" secondAttribute="bottom" constant="17" id="VMy-tR-4OV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="Ybu-Yg-3UX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t2H-3Y-fPx" secondAttribute="trailing" constant="20" id="gGP-aS-j6f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JPh-zc-TcY" secondAttribute="trailing" constant="20" id="gNJ-SH-CwI"/>
+                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="274" id="htT-GV-pct"/>
+                            <constraint firstItem="JPh-zc-TcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iNb-qc-yE8"/>
+                            <constraint firstItem="t2H-3Y-fPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uYn-Y5-xNf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TBL-F2-tzD"/>
@@ -83,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1055.072463768116" y="75"/>
         </scene>
-        <!--View Controller-->
+        <!--Random View Controller-->
         <scene sceneID="cjv-fC-xSk">
             <objects>
-                <viewController storyboardIdentifier="ID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oTN-V0-cqd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oTN-V0-cqd" customClass="RandomViewController" customModule="UserLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qTs-Kq-kso">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

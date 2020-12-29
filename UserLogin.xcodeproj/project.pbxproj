@@ -13,6 +13,7 @@
 		3405A92C255DACCB0098D6DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3405A92A255DACCB0098D6DC /* Main.storyboard */; };
 		3405A92E255DACCD0098D6DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3405A92D255DACCD0098D6DC /* Assets.xcassets */; };
 		3405A931255DACCD0098D6DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3405A92F255DACCD0098D6DC /* LaunchScreen.storyboard */; };
+		3462E03A259BB33500BC0E22 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462E039259BB33500BC0E22 /* ShapesViewController.swift */; };
 		8F7BF1C12593AB6E00B1FFB6 /* MeinyoTeburuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7BF1C02593AB6E00B1FFB6 /* MeinyoTeburuController.swift */; };
 		8FA8494E255DB29E00843E7B /* IsValidEmailOrNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8494D255DB29E00843E7B /* IsValidEmailOrNot.swift */; };
 		8FA84951255DB2F600843E7B /* AppearanceDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA84950255DB2F600843E7B /* AppearanceDependencies.swift */; };
@@ -29,6 +30,7 @@
 		3405A92D255DACCD0098D6DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3405A930255DACCD0098D6DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3405A932255DACCD0098D6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3462E039259BB33500BC0E22 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		623E9978EDA19CDA0B05F8FC /* Pods-UserLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserLogin.debug.xcconfig"; path = "Target Support Files/Pods-UserLogin/Pods-UserLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		8F7BF1C02593AB6E00B1FFB6 /* MeinyoTeburuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinyoTeburuController.swift; sourceTree = "<group>"; };
 		8FA8494D255DB29E00843E7B /* IsValidEmailOrNot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsValidEmailOrNot.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				3405A928255DACCB0098D6DC /* ViewController.swift */,
+				3462E039259BB33500BC0E22 /* ShapesViewController.swift */,
 				8F7BF1C02593AB6E00B1FFB6 /* MeinyoTeburuController.swift */,
 			);
 			path = ViewControllers;
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3462E03A259BB33500BC0E22 /* ShapesViewController.swift in Sources */,
 				8FA8494E255DB29E00843E7B /* IsValidEmailOrNot.swift in Sources */,
 				3405A929255DACCB0098D6DC /* ViewController.swift in Sources */,
 				8FA84951255DB2F600843E7B /* AppearanceDependencies.swift in Sources */,

@@ -1,16 +1,24 @@
 PODS:
+  - Alamofire (5.4.1)
   - SideMenu (6.5.0)
+  - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - SideMenu
+  - TextFieldEffects
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - SideMenu
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 999a82e2321201a4fcc7fb9fd7b75926b634207b
+PODFILE CHECKSUM: 604c347d22294ade9429f3b1d04231fd5df1e413
 
-COCOAPODS: 1.9.2
+COCOAPODS: 1.10.0

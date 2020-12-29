@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD:UserLogin/Base.lproj/Main.storyboard
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49M-Dx-W86">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49M-Dx-W86">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+>>>>>>> 4fead7ad6bab7c9340d76fe984dcff666c58787f:UserLogin/Views/Base.lproj/Main.storyboard
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,6 +39,7 @@
                                     <action selector="password_entered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xyJ-gK-3uO"/>
                                 </connections>
                             </textField>
+<<<<<<< HEAD:UserLogin/Base.lproj/Main.storyboard
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b2-ra-qn6">
                                 <rect key="frame" x="183.5" y="321" width="47" height="30"/>
                                 <state key="normal" title="Sign in">
@@ -43,6 +51,10 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPh-zc-TcY" customClass="RTextfield" customModule="UserLogin" customModuleProvider="target">
                                 <rect key="frame" x="20" y="223" width="374" height="34"/>
+=======
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2H-3Y-fPx" customClass="RTextfield" customModule="UserLogin" customModuleProvider="target">
+                                <rect key="frame" x="20" y="274" width="374" height="34"/>
+>>>>>>> 4fead7ad6bab7c9340d76fe984dcff666c58787f:UserLogin/Views/Base.lproj/Main.storyboard
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -58,6 +70,19 @@
                                     <action selector="username_entered:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="T57-aj-Mhb"/>
                                 </connections>
                             </textField>
+<<<<<<< HEAD:UserLogin/Base.lproj/Main.storyboard
+=======
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b2-ra-qn6">
+                                <rect key="frame" x="181" y="314" width="52" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwc-fN-vS2"/>
+                                </connections>
+                            </button>
+>>>>>>> 4fead7ad6bab7c9340d76fe984dcff666c58787f:UserLogin/Views/Base.lproj/Main.storyboard
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,7 +103,13 @@
                             <constraint firstItem="t2H-3Y-fPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uYn-Y5-xNf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TBL-F2-tzD"/>
+                    <navigationItem key="navigationItem" id="TBL-F2-tzD">
+                        <barButtonItem key="leftBarButtonItem" title="Tap this" id="Znp-X1-DNg">
+                            <connections>
+                                <action selector="menuPoppingOut:" destination="BYZ-38-t0r" id="Wia-Qw-6cT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="password" destination="t2H-3Y-fPx" id="Ulf-df-b8i"/>
                         <outlet property="username" destination="JPh-zc-TcY" id="tdD-aK-YCb"/>
@@ -120,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24B-9S-AeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="89"/>
+            <point key="canvasLocation" x="1983" y="44"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="da3-gM-NRw">

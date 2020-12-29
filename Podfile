@@ -9,6 +9,7 @@ target 'UserLogin' do
 
 	pod 'SideMenu'
 	pod 'Alamofire', '~> 5.2'
+	pod 'TextFieldEffects'
 
 end
 

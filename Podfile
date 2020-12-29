@@ -8,5 +8,6 @@ target 'UserLogin' do
   # Pods for UserLogin
 
 	pod 'SideMenu'
+	pod 'TextFieldEffects'
 
 end

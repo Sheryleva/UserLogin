@@ -31,7 +31,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         username.placeholder = "User Name"
         password.placeholder = "Pass Word"
         
-        
         settingUpSideMenuNavigator()
         navigationItem.leftBarButtonItem?.title = "Click here"
         navigationItem.leftBarButtonItem?.tintColor = .black

@@ -8,5 +8,7 @@ target 'UserLogin' do
   # Pods for UserLogin
 
 	pod 'SideMenu'
+	pod 'Alamofire', '~> 5.2'
 
 end
+

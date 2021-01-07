@@ -16,6 +16,7 @@
 		3462E03A259BB33500BC0E22 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462E039259BB33500BC0E22 /* ShapesViewController.swift */; };
 		8267C0C8D329D56ACFD7D016 /* Pods_UserLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45A664F4BC589A3ABF7DACA /* Pods_UserLogin.framework */; };
 		8F7BF1C12593AB6E00B1FFB6 /* MeinyoTeburuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7BF1C02593AB6E00B1FFB6 /* MeinyoTeburuController.swift */; };
+		8F89032825A690590061EE14 /* UrlProtocolClassOverridden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89032725A690590061EE14 /* UrlProtocolClassOverridden.swift */; };
 		8FA8494E255DB29E00843E7B /* IsValidEmailOrNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8494D255DB29E00843E7B /* IsValidEmailOrNot.swift */; };
 		8FA84951255DB2F600843E7B /* AppearanceDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA84950255DB2F600843E7B /* AppearanceDependencies.swift */; };
 		8FA84954255DB45100843E7B /* GloballyApplied.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA84953255DB45100843E7B /* GloballyApplied.swift */; };
@@ -32,6 +33,7 @@
 		3405A932255DACCD0098D6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3462E039259BB33500BC0E22 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 		8F7BF1C02593AB6E00B1FFB6 /* MeinyoTeburuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeinyoTeburuController.swift; sourceTree = "<group>"; };
+		8F89032725A690590061EE14 /* UrlProtocolClassOverridden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlProtocolClassOverridden.swift; sourceTree = "<group>"; };
 		8FA8494D255DB29E00843E7B /* IsValidEmailOrNot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsValidEmailOrNot.swift; sourceTree = "<group>"; };
 		8FA84950255DB2F600843E7B /* AppearanceDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceDependencies.swift; sourceTree = "<group>"; };
 		8FA84953255DB45100843E7B /* GloballyApplied.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloballyApplied.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		3405A923255DACCB0098D6DC /* UserLogin */ = {
 			isa = PBXGroup;
 			children = (
+				8F89032425A68FFA0061EE14 /* Networks */,
 				3405A924255DACCB0098D6DC /* AppDelegate.swift */,
 				3405A926255DACCB0098D6DC /* SceneDelegate.swift */,
 				8F7BF1C32593AEA300B1FFB6 /* ViewControllers */,
@@ -128,6 +131,14 @@
 				8FA84950255DB2F600843E7B /* AppearanceDependencies.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8F89032425A68FFA0061EE14 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				8F89032725A690590061EE14 /* UrlProtocolClassOverridden.swift */,
+			);
+			path = Networks;
 			sourceTree = "<group>";
 		};
 		ECB39326C7F2277B02AD6EC8 /* Frameworks */ = {
@@ -260,6 +271,7 @@
 				3405A927255DACCB0098D6DC /* SceneDelegate.swift in Sources */,
 				8FA84954255DB45100843E7B /* GloballyApplied.swift in Sources */,
 				8F7BF1C12593AB6E00B1FFB6 /* MeinyoTeburuController.swift in Sources */,
+				8F89032825A690590061EE14 /* UrlProtocolClassOverridden.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

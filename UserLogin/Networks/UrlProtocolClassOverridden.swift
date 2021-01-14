@@ -9,17 +9,24 @@ import Foundation
 
 class UrlSimulatedProtocolClass: URLProtocol {
     static var stubbedResponseData: Data?
+    static var erro: Error?
     
-    override class func canonicalRequest(for request: URLRequest) -> URLRequest {
-        return request
-    }
     override class func canInit(with request: URLRequest) -> Bool {
          return true
     }
+    override class func canonicalRequest(for request: URLRequest) -> URLRequest {
+        return request
+    }
     override func stopLoading() { }
-    
-    override func startLoading() { [self]
-        client?.urlProtocol(self, didLoad: UrlSimulatedProtocolClass.stubbedResponseData ?? Data())
+
+    override func startLoading() {
+        if let erro = UrlSimulatedProtocolClass.erro { [self]
+            client?.urlProtocol(self, didFailWithError: erro)
+        } else {
+            client?.urlProtocol(self, didLoad: UrlSimulatedProtocolClass.stubbedResponseData ?? Data.init())
+        }
         self.client?.urlProtocolDidFinishLoading(self)
     }
 }
+
+
